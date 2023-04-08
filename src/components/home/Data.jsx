@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { UseEffect } from 'react'
+import TypeWriter from "typewriter-effect"
 
 const Data = () => {
   return (
@@ -54,7 +55,15 @@ const Data = () => {
                   ></path>
                 </svg>
         </h1>
-        <h3 className="home_subtitle">Programmer</h3>
+        <h3 className="home_subtitle"><TypeWriter options= {{autoStart: true,
+        loop: true,
+        delay: 100,
+        strings: [
+          "Programmer", "CODER", "Front-End Developer", "Back-End Developer"
+        ],
+        
+        
+        }} /></h3>
         <p className="home_des">I am full stack web developer(mern)</p>
         <a href="#contact" className="button button--flex" >
             SEND Hi!
